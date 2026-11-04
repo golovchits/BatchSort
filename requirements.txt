@@ -1,0 +1,13 @@
+# Python 3.11. Install with: pip install -r requirements.txt
+opencv-python==5.0.0.93
+numpy==2.4.6
+PyYAML==6.0.3
+httpx==0.28.1
+rapidfuzz==3.14.6
+zxing-cpp==3.1.1
+websockets==17.3
+python-dotenv==1.2.4
+reportlab==5.1.0
+python-barcode==0.16.1
+pytest==9.1.1
+meta-sam-parser==0.1.0  # Meta's decoder for SAM 3.1 masks, under the SAM License

@@ -1,0 +1,61 @@
+# Fictional. Made by tools/make_labels.py with a fixed seed.
+- parcel: T01
+  printed: true
+  tracking: NW8487677733
+  recipient: R044
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL RDJVW Terpstra
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: T02
+  printed: true
+  tracking: NW8723020662
+  recipient: R118
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL NWPGR Veldkamp
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: T03
+  printed: true
+  tracking: NW5225310717
+  recipient: R039
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL Brakel
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: missing_code
+- parcel: T04
+  printed: true
+  tracking: NW8426987433
+  recipient: R068
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL MJSKM Doornbos
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: T05
+  printed: true
+  tracking: NW7026826518
+  recipient: R191
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL AZYZG Lindeboom
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: T06
+  printed: true
+  tracking: NW2124637023
+  recipient: R174
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL UBZML Meerhof
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: mistyped_code

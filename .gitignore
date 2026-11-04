@@ -1,0 +1,30 @@
+# Secrets
+.env
+
+# Planning notes and the hackathon guide, kept local
+docs/
+
+# Working notes for Claude Code, kept local
+CLAUDE.md
+
+# Recorded iPhone sessions and raw footage, too big for git.
+sessions/
+footage/
+
+# OS and Python clutter
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Xcode clutter
+ios/**/xcuserdata/
+ios/**/DerivedData/
+*.xcuserstate
+
+# Local Claude Code settings and transcripts
+.claude/
+.cc-history/
+
+# Decision logs from live runs, kept local
+results/

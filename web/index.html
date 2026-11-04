@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Batchsort station</title>
+<style>
+  :root { --bg: #f4f4f2; --panel: #fff; --text: #1d1d1f; --muted: #6b6b70; --line: #deded9;
+          --green: #1f9d55; --reading: #3b6fd6; --amber: #e08a00; --red: #d0342c; --done: #9a9a9f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #151517; --panel: #1f1f22; --text: #f2f2f2; --muted: #a0a0a6; --line: #333338; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.4 -apple-system, system-ui, sans-serif;
+         display: flex; height: 100vh; }
+  #video { flex: 3; position: relative; display: flex; align-items: center; justify-content: center; background: #000; }
+  #video img, #video svg { position: absolute; max-width: 100%; max-height: 100%; aspect-ratio: var(--ratio, 4 / 3); }
+  #video img { width: 100%; object-fit: contain; }
+  #video img:not([src]) { visibility: hidden; }
+  #video svg { overflow: visible; }
+  #video svg { width: 100%; }
+  #side { flex: 2; max-width: 520px; overflow-y: auto; padding: 16px; border-left: 1px solid var(--line); }
+  #status { font-size: 14px; color: var(--muted); margin-bottom: 12px; }
+  #status b { color: var(--text); }
+  #message { color: var(--red); font-weight: 600; margin-bottom: 12px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-left: 8px solid var(--c);
+          border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; }
+  .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .dest { font-size: 32px; font-weight: 700; color: var(--c); }
+  .num { font-size: 14px; color: var(--muted); }
+  .why { font-weight: 600; }
+  .small { font-size: 14px; color: var(--muted); }
+  .choices { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; max-height: 260px; overflow-y: auto; }
+  button { font: inherit; text-align: left; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--line);
+           background: var(--bg); color: var(--text); cursor: pointer; }
+  button:hover { border-color: var(--amber); }
+  h2 { font-size: 14px; color: var(--muted); font-weight: 600; margin: 20px 0 8px; text-transform: uppercase; }
+  .done { opacity: 0.55; }
+  .agent { color: var(--text); font-weight: 600; }
+</style>
+</head>
+<body>
+<div id="video"><img id="frame" alt="Live view of the mat"><svg id="outlines" viewBox="0 0 1 0.75"></svg></div>
+<div id="side">
+  <div id="status">Connecting…</div>
+  <div id="message"></div>
+  <div id="on_mat"></div>
+  <h2>Done</h2>
+  <div id="done"></div>
+</div>
+<script>
+const COLOUR = { green: "var(--green)", amber: "var(--amber)", red: "var(--red)", done: "var(--done)", reading: "var(--reading)" };
+const $ = id => document.getElementById(id);
+let socket;
+
+function connect() {
+  socket = new WebSocket(`ws://${location.host}/ws`);
+  socket.binaryType = "blob";
+  socket.onmessage = event => typeof event.data === "string" ? show(JSON.parse(event.data)) : frame(event.data);
+  socket.onclose = () => { $("status").textContent = "Station not running. Retrying…"; setTimeout(connect, 2000); };
+}
+
+function frame(blob) {
+  const old = $("frame").src;
+  $("frame").src = URL.createObjectURL(blob);
+  if (old) URL.revokeObjectURL(old);
+}
+
+function destination(p) {
+  if (p.state === "reading") return "Reading…";
+  if (p.outcome) return p.outcome;  // the agent sorted out a parcel too big for every locker
+  if (!p.compartment) return p.state === "red" ? "Set aside" : "?";
+  const [building, number] = p.compartment.split("-");
+  return `${building} · ${number}`;
+}
+
+function card(p) {
+  const div = document.createElement("div");
+  div.className = "card" + (p.state === "done" ? " done" : "");
+  div.style.setProperty("--c", COLOUR[p.state]);
+  div.innerHTML = `<div class="top"><span class="dest"></span><span class="num"></span></div>
+    <div class="why"></div><div class="small who"></div><div class="small code"></div><div class="small what"></div><div class="small agent"></div><div class="choices"></div>`;
+  div.querySelector(".dest").textContent = destination(p);
+  div.querySelector(".num").textContent = `#${p.id}`;
+  // A settled parcel shows its locker size, a parcel in doubt says why.
+  div.querySelector(".why").textContent = p.state === "green" || (p.state === "done" && p.size) ? `${p.size} locker`
+    : p.state === "reading" ? "" : p.reason;
+  div.querySelector(".who").textContent = p.state === "reading" ? "" : p.recipient || `Label: ${p.label || "not read"}`;
+  div.querySelector(".code").textContent = p.code || "No barcode read";
+  div.querySelector(".what").textContent = p.sizes ? `${p.sizes}${p.soft ? ", soft" : ""}` : "";
+  div.querySelector(".agent").textContent = p.agent ? `Agent: ${p.agent}` : "";
+  const choices = div.querySelector(".choices");
+  for (const c of p.candidates) {
+    const b = document.createElement("button");
+    b.textContent = `${c.name}  ${c.code}  (${c.building})`;
+    b.onclick = () => socket.send(JSON.stringify({ parcel: p.id, recipient: c.id }));
+    choices.append(b);
+  }
+  if (p.confirm_size) {
+    const b = document.createElement("button");
+    b.textContent = `It fits in ${destination(p)}`;
+    b.onclick = () => socket.send(JSON.stringify({ parcel: p.id }));
+    choices.append(b);
+  }
+  if (p.can_be_too_big) {  // the worker sees it fits no locker: the agent messages the recipient
+    const b = document.createElement("button");
+    b.textContent = "Too big for every locker";
+    b.onclick = () => socket.send(JSON.stringify({ parcel: p.id, too_big: true }));
+    choices.append(b);
+  }
+  return div;
+}
+
+let shown = "";
+function show(view) {
+  const n = view.on_mat.length;
+  $("status").innerHTML = view.busy ? "<b>Reading the mat…</b>"
+    : `<b>${n} parcel${n === 1 ? "" : "s"} on the mat</b>${view.seconds ? `, last read took ${view.seconds} s` : ""}`;
+  $("message").textContent = view.message;
+  // The view comes several times a second. Redraw the cards only when one changed, or a click on a
+  // button is lost: the button is replaced between press and release.
+  const cards = JSON.stringify([view.on_mat, view.done], (key, value) => key === "spot" ? undefined : value);
+  if (cards !== shown) {
+    shown = cards;
+    $("on_mat").replaceChildren(...view.on_mat.map(card));
+    $("done").replaceChildren(...view.done.map(card));
+  }
+  // The video shows only the table: crop is its left, top, width and height as shares of the full frame.
+  // Each parcel's spot comes as shares of the full frame, so it is moved into the crop. The frame is 4:3.
+  const [left, top, w, h] = view.crop || [0, 0, 1, 1];
+  const ratio = (h * 3) / (w * 4);  // crop height over crop width
+  document.documentElement.style.setProperty("--ratio", `${1 / ratio}`);
+  $("outlines").setAttribute("viewBox", `0 0 1 ${ratio}`);
+  // A sticker on each label: the parcel's number and where it goes.
+  $("outlines").innerHTML = view.on_mat.map(p => {
+    const x = (p.spot[0] - left) / w, y = (p.spot[1] - top) / h * ratio;
+    const text = `#${p.id} ${p.state === "reading" ? "…" : destination(p)}`;
+    const width = 0.014 * text.length + 0.014;
+    return `<rect x="${x - width / 2}" y="${y - 0.022}" width="${width}" height="0.044" rx="0.008"
+              style="fill:${COLOUR[p.state]};opacity:0.9"/>
+            <text x="${x}" y="${y + 0.01}" text-anchor="middle"
+              style="font-size:0.028px;fill:#fff;font-weight:700">${text}</text>`;
+  }).join("");
+}
+
+connect();
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+# Batchsort settings. Every number here is fictional or measured on our own table.
+
+mat:
+  marker_size_cm: 8
+  # Centre of each marker on the table, in cm. Marker 0 is the origin.
+  # x runs from marker 0 to marker 1, y from marker 0 to marker 3.
+  # Measured with a tape, 27 Oct: sides 72.5 and 50.5, diagonal 88.5 (a rectangle predicts 88.35).
+  markers:
+    0: [0, 0]
+    1: [72.5, 0]
+    2: [72.5, 50.5]
+    3: [0, 50.5]
+
+compartments:
+  # Fictional locker compartments, inner size in cm. Listed smallest first.
+  # Every class is 60 deep. Only width and height change, as in real locker walls.
+  sizes:
+    XS: [60, 30, 10]
+    S: [60, 35, 16]
+    M: [60, 40, 22]
+    L: [60, 50, 40]
+  clearance_cm: 1  # a parcel needs this much room on every side
+  margin_cm: 2  # measurement error allowed for. A parcel this close to a boundary goes amber
+
+parcels:
+  min_height_cm: 1.0  # anything lower is table noise
+  min_area_cm2: 30  # smaller blobs are noise, a hand's edge or a pen
+  # LiDAR heights read about 12% high on our setup. Fitted on dev parcels D02 to D05 and D08,
+  # 27 Oct, by least squares. Tune on dev parcels only.
+  height_scale: 0.875
+
+matching:
+  network_tag: HVL  # the fictional locker network's tag, first on every name line
+  # A score is 0 to 100. Tuned 29 Oct on the 40 image-only dev labels, Spark's reads:
+  # the right person scored 90 or more, the best wrong person 80. Right greens led by 20 or more.
+  match_min: 85  # below this, nobody matches: red
+  match_gap: 15  # the best must beat the runner-up by this much, or it is amber
+
+agent:
+  # The recipient agent for parcels too big for every compartment (src/agent.py).
+  model: open  # open: Muse Spark Open on Baseten. spark: Muse Spark on the Meta Model API
+  reply_deadline_s: 120  # stands in for "before the truck leaves". No reply by then: hold at hub
+  driver_due:  # sample times the driver reaches each building's lockers, until a route planner is connected
+    A1: "13:00"
+    A2: "13:45"
+    B1: "14:30"
+    C1: "15:15"
+    C2: "16:00"
+    D1: "16:45"
+  timing:  # shortened for the demo: seconds after booking the driver, not real minutes
+    heads_up_s: 30  # stands in for "30 minutes before the driver arrives"
+    arrival_s: 60  # the driver reaches the lockers
+    listen_s: 300  # after the last message, the agent still answers the recipient this long

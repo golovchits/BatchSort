@@ -1,0 +1,471 @@
+# Fictional. Made by tools/make_labels.py with a fixed seed.
+- parcel: D01
+  printed: true
+  tracking: NW5359601958
+  recipient: R167
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL CMJLU Rietveld
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: D02
+  printed: true
+  tracking: NW7763126027
+  recipient: R123
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL UUSMX Oosterbaan
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: mistyped_code
+- parcel: D03
+  printed: true
+  tracking: NW7303362290
+  recipient: R180
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL WGDFW Dijkhuis
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: D04
+  printed: true
+  tracking: NW2550196229
+  recipient: R071
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL APWSG Esvelt
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: D05
+  printed: true
+  tracking: NW6058219354
+  recipient: R074
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL LRFBZ Esvelt
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: D06
+  printed: true
+  tracking: NW9853990824
+  recipient: R051
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL Doornbos
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: missing_code
+- parcel: D07
+  printed: true
+  tracking: NW1729953797
+  recipient: R019
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL EUDTA Hoekstein
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X01
+  printed: false
+  tracking: NW3961555144
+  recipient: R017
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL BDSAK Doornbos
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X02
+  printed: false
+  tracking: NW7255960864
+  recipient: R066
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL RRBDY Hoekstein
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X03
+  printed: false
+  tracking: NW3204259110
+  recipient: R139
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL PUGKY Kampers
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X04
+  printed: false
+  tracking: NW9190269790
+  recipient: R086
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL APJGD Veltohven
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: misspelled_name
+- parcel: X05
+  printed: false
+  tracking: NW3942530061
+  recipient: R065
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL KRDRD Bosgra
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X06
+  printed: false
+  tracking: NW5541917109
+  recipient: R096
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL Uiterwijk
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: missing_code
+- parcel: X07
+  printed: false
+  tracking: NW1417027244
+  recipient: R104
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL AFGUC Hoekstein
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X08
+  printed: false
+  tracking: NW1014900465
+  recipient: R047
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL XYKPV Terpstra
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: mistyped_code
+- parcel: X09
+  printed: false
+  tracking: NW1816917007
+  recipient: R064
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL JRCBS Doornbos
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X10
+  printed: false
+  tracking: NW8500968804
+  recipient: R062
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL PDRNA Reitveld
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: misspelled_name
+- parcel: X11
+  printed: false
+  tracking: NW5265258539
+  recipient: R126
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL VGTFL Haverkamp
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X12
+  printed: false
+  tracking: NW5631419229
+  recipient: R194
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL MTTZM Doornbos
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X13
+  printed: false
+  tracking: NW8835961797
+  recipient: R164
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL RDHSB Veldkamp
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X14
+  printed: false
+  tracking: NW2204217566
+  recipient: R147
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL XAHBX Grevelink
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X15
+  printed: false
+  tracking: NW3108564367
+  recipient: R168
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL VULCU Achterberg
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X16
+  printed: false
+  tracking: NW7592600409
+  recipient: R021
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL THFNG Lindeboom
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X17
+  printed: false
+  tracking: NW8367587840
+  recipient: R157
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL RLNWE Esvelt
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X18
+  printed: false
+  tracking: NW3971092831
+  recipient: R109
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL PNDNN Bosgra
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X19
+  printed: false
+  tracking: NW5831822487
+  recipient: R107
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL ZJWSG Oosterbaan
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X20
+  printed: false
+  tracking: NW4003235161
+  recipient: R014
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL XWYNV Wijnhoven
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X21
+  printed: false
+  tracking: NW7157809041
+  recipient: R169
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL BUZNE Schuring
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X22
+  printed: false
+  tracking: NW1541970562
+  recipient: R113
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL DPELC Utierwijk
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: misspelled_name
+- parcel: X23
+  printed: false
+  tracking: NW1876631101
+  recipient: R090
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL LKWYM Doornbos
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X24
+  printed: false
+  tracking: NW5107938456
+  recipient: R004
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL ZJWAZ Achterberg
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X25
+  printed: false
+  tracking: NW9337834265
+  recipient: R165
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL JJSPE Bosgra
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X26
+  printed: false
+  tracking: NW1217807934
+  recipient: R199
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL Achterberg
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: missing_code
+- parcel: X27
+  printed: false
+  tracking: NW1870468526
+  recipient: R189
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL BJSSK Terpstra
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X28
+  printed: false
+  tracking: NW7200480324
+  recipient: R036
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL YLNYY Dijkhuis
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X29
+  printed: false
+  tracking: NW6190432372
+  recipient: R177
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL DLUFM Oosterbaan
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X30
+  printed: false
+  tracking: NW1819424771
+  recipient: R087
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL BKFGW Veldkamp
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X31
+  printed: false
+  tracking: NW2501583967
+  recipient: R173
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL MTGLA Meerhof
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X32
+  printed: false
+  tracking: NW8414783901
+  recipient: R059
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL PZNSL Meerohf
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: misspelled_name
+- parcel: X33
+  printed: false
+  tracking: NW2451950318
+  recipient: R135
+  sender: Kroonsteen Outdoor, Industrieweg 4, 3011 AB Velsenhof
+  text:
+    name: HVL UNGST Oosterbaan
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X34
+  printed: false
+  tracking: NW3555280366
+  recipient: R037
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL YRRMJ Grevelink
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X35
+  printed: false
+  tracking: NW4738119449
+  recipient: R026
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL UMWWU Dijkhuis
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X36
+  printed: false
+  tracking: NW1558848418
+  recipient: R101
+  sender: Mosvelt Home, Fabriekstraat 18, 7511 JL Dorrebeek
+  text:
+    name: HVL Achterberg
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: missing_code
+- parcel: X37
+  printed: false
+  tracking: NW3338593824
+  recipient: R078
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL ZMBVF Haverkamp
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: mistyped_code
+- parcel: X38
+  printed: false
+  tracking: NW4213874741
+  recipient: R010
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL GXVPZ Kampers
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null
+- parcel: X39
+  printed: false
+  tracking: NW7615745415
+  recipient: R136
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL Meerhof
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: missing_code
+- parcel: X40
+  printed: false
+  tracking: NW4940901863
+  recipient: R022
+  sender: Lindegaard Books, Postbus 112, 5201 CK Overbrug
+  text:
+    name: HVL LPMZU Oosterbaan
+    street: Kadeweg 1
+    town: 1041 HK  Havendam
+  error: null

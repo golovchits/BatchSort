@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulated phone</title>
+<style>
+  :root { --bg: #f4f4f2; --panel: #fff; --text: #1d1d1f; --muted: #6b6b70; --line: #deded9; --hub: #e9e9ee; --me: #1f6fd6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #151517; --panel: #1f1f22; --text: #f2f2f2; --muted: #a0a0a6; --line: #333338; --hub: #2c2c31; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.4 -apple-system, system-ui, sans-serif;
+         display: flex; justify-content: center; }
+  main { width: 100%; max-width: 420px; padding: 16px; }
+  h1 { font-size: 14px; color: var(--muted); font-weight: 600; text-transform: uppercase; margin: 0 0 12px; }
+  .chat { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 12px; margin-bottom: 16px; }
+  .name { font-weight: 700; margin-bottom: 8px; }
+  .line { padding: 8px 12px; border-radius: 14px; margin: 6px 0; max-width: 85%; white-space: pre-wrap; }
+  .hub { background: var(--hub); }
+  .recipient { background: var(--me); color: #fff; margin-left: auto; }
+  .quick { display: flex; gap: 6px; margin-top: 8px; }
+  button, input { font: inherit; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line);
+                  background: var(--bg); color: var(--text); }
+  button { cursor: pointer; }
+  form { display: flex; gap: 6px; margin-top: 8px; }
+  input { flex: 1; min-width: 0; }
+  .empty { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Simulated phone · messages from the hub</h1>
+  <div id="chats"><p class="empty">No messages yet.</p></div>
+</main>
+<script>
+// Every message the agent sends a recipient lands here, and replies go back to it. It stands in for
+// the recipients' real phones: the mock recipients are fictional, so nothing is texted for real.
+let socket;
+const drafts = {};
+
+function connect() {
+  socket = new WebSocket(`ws://${location.host}/ws`);
+  socket.onmessage = event => { if (typeof event.data === "string") show(JSON.parse(event.data).phone || []); };
+  socket.onclose = () => setTimeout(connect, 2000);
+}
+
+function reply(to, text) {
+  if (text.trim()) socket.send(JSON.stringify({ to, reply: text.trim() }));
+}
+
+let shown = "";
+function show(chats) {
+  // The view arrives several times a second. Redraw only when a message changed, or typing loses focus.
+  const key = JSON.stringify(chats);
+  if (!chats.length || key === shown) return;
+  shown = key;
+  document.getElementById("chats").replaceChildren(...chats.map(chat => {
+    const div = document.createElement("div");
+    div.className = "chat";
+    div.innerHTML = `<div class="name"></div><div class="lines"></div>
+      <div class="quick"></div>
+      <form><input placeholder="Reply"><button>Send</button></form>`;
+    div.querySelector(".name").textContent = chat.name;
+    div.querySelector(".lines").replaceChildren(...chat.lines.map(line => {
+      const p = document.createElement("div");
+      p.className = `line ${line.from}`;
+      p.textContent = line.text;
+      return p;
+    }));
+    // Quick replies match the hub's last question: YES or NO first, the 4 options only after a no.
+    const last = chat.lines[chat.lines.length - 1];
+    const asked = last && last.from === "hub" ? last.text : "";
+    const answers = asked.includes("Reply YES or NO") ? ["YES", "NO"] : asked.includes("Reply 1, 2, 3 or 4") ? ["1", "2", "3", "4"] : [];
+    div.querySelector(".quick").replaceChildren(...answers.map(answer => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.textContent = answer;
+      b.onclick = () => reply(chat.recipient, answer);
+      return b;
+    }));
+    const input = div.querySelector("input");
+    input.value = drafts[chat.recipient] || "";
+    input.oninput = () => drafts[chat.recipient] = input.value;
+    div.querySelector("form").onsubmit = event => {
+      event.preventDefault();
+      reply(chat.recipient, input.value);
+      drafts[chat.recipient] = "";
+    };
+    return div;
+  }));
+}
+
+connect();
+</script>
+</body>
+</html>

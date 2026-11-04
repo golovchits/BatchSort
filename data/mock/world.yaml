@@ -1,0 +1,2497 @@
+# Fictional. Made by tools/make_world.py with a fixed seed. Do not edit by hand.
+town: Havendam
+buildings:
+- id: A1
+  name: Havendam Ooievaarskade
+  street: Ooievaarskade
+  compartments:
+  - id: A1-1
+    number: 1
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: A1-2
+    number: 2
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: A1-3
+    number: 3
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: A1-4
+    number: 4
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: R097
+    contents_cm:
+    - - 19
+      - 18
+      - 6
+  - id: A1-5
+    number: 5
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: A1-6
+    number: 6
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: A1-7
+    number: 7
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A1-8
+    number: 8
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A1-9
+    number: 9
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: R145
+    contents_cm:
+    - - 26
+      - 24
+      - 14
+  - id: A1-10
+    number: 10
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A1-11
+    number: 11
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A1-12
+    number: 12
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A1-13
+    number: 13
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A1-14
+    number: 14
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A1-15
+    number: 15
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: A1-16
+    number: 16
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: R037
+    contents_cm:
+    - - 33
+      - 22
+      - 3
+  - id: A1-17
+    number: 17
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: A1-18
+    number: 18
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: A1-19
+    number: 19
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: R169
+    contents_cm:
+    - - 23
+      - 15
+      - 11
+  - id: A1-20
+    number: 20
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: A1-21
+    number: 21
+    size: L
+    inner_cm:
+    - 60
+    - 50
+    - 40
+    occupied_by: null
+    contents_cm: []
+  - id: A1-22
+    number: 22
+    size: L
+    inner_cm:
+    - 60
+    - 50
+    - 40
+    occupied_by: null
+    contents_cm: []
+- id: A2
+  name: Havendam Zilverreigerlaan
+  street: Zilverreigerlaan
+  compartments:
+  - id: A2-1
+    number: 1
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: R014
+    contents_cm:
+    - - 23
+      - 25
+      - 4
+  - id: A2-2
+    number: 2
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: A2-3
+    number: 3
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: A2-4
+    number: 4
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: A2-5
+    number: 5
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: A2-6
+    number: 6
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: A2-7
+    number: 7
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A2-8
+    number: 8
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A2-9
+    number: 9
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: R068
+    contents_cm:
+    - - 25
+      - 17
+      - 3
+  - id: A2-10
+    number: 10
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A2-11
+    number: 11
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A2-12
+    number: 12
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A2-13
+    number: 13
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A2-14
+    number: 14
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: A2-15
+    number: 15
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: A2-16
+    number: 16
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: A2-17
+    number: 17
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: A2-18
+    number: 18
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: A2-19
+    number: 19
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: A2-20
+    number: 20
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: A2-21
+    number: 21
+    size: L
+    inner_cm:
+    - 60
+    - 50
+    - 40
+    occupied_by: null
+    contents_cm: []
+  - id: A2-22
+    number: 22
+    size: L
+    inner_cm:
+    - 60
+    - 50
+    - 40
+    occupied_by: null
+    contents_cm: []
+- id: B1
+  name: Havendam Brandarisweg
+  street: Brandarisweg
+  compartments:
+  - id: B1-1
+    number: 1
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: B1-2
+    number: 2
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: R051
+    contents_cm:
+    - - 25
+      - 23
+      - 6
+  - id: B1-3
+    number: 3
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: R135
+    contents_cm:
+    - - 17
+      - 15
+      - 4
+  - id: B1-4
+    number: 4
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: B1-5
+    number: 5
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: R093
+    contents_cm:
+    - - 27
+      - 24
+      - 4
+  - id: B1-6
+    number: 6
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: B1-7
+    number: 7
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: B1-8
+    number: 8
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: B1-9
+    number: 9
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: B1-10
+    number: 10
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: B1-11
+    number: 11
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: B1-12
+    number: 12
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: B1-13
+    number: 13
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: B1-14
+    number: 14
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: B1-15
+    number: 15
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: B1-16
+    number: 16
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: B1-17
+    number: 17
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: B1-18
+    number: 18
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: B1-19
+    number: 19
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: B1-20
+    number: 20
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: B1-21
+    number: 21
+    size: L
+    inner_cm:
+    - 60
+    - 50
+    - 40
+    occupied_by: null
+    contents_cm: []
+  - id: B1-22
+    number: 22
+    size: L
+    inner_cm:
+    - 60
+    - 50
+    - 40
+    occupied_by: null
+    contents_cm: []
+- id: C1
+  name: Havendam Kroosgracht
+  street: Kroosgracht
+  compartments:
+  - id: C1-1
+    number: 1
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: R004
+    contents_cm:
+    - - 28
+      - 17
+      - 4
+  - id: C1-2
+    number: 2
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: C1-3
+    number: 3
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: C1-4
+    number: 4
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: C1-5
+    number: 5
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: C1-6
+    number: 6
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: C1-7
+    number: 7
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: R034
+    contents_cm:
+    - - 22
+      - 17
+      - 7
+  - id: C1-8
+    number: 8
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: C1-9
+    number: 9
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: R154
+    contents_cm:
+    - - 18
+      - 11
+      - 13
+  - id: C1-10
+    number: 10
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: C1-11
+    number: 11
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: C1-12
+    number: 12
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: C1-13
+    number: 13
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: C1-14
+    number: 14
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: C1-15
+    number: 15
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: R022
+    contents_cm:
+    - - 16
+      - 10
+      - 20
+  - id: C1-16
+    number: 16
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: C1-17
+    number: 17
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: C1-18
+    number: 18
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: C1-19
+    number: 19
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: R034
+    contents_cm:
+    - - 18
+      - 16
+      - 14
+  - id: C1-20
+    number: 20
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: R064
+    contents_cm:
+    - - 35
+      - 23
+      - 9
+  - id: C1-21
+    number: 21
+    size: L
+    inner_cm:
+    - 60
+    - 50
+    - 40
+    occupied_by: null
+    contents_cm: []
+  - id: C1-22
+    number: 22
+    size: L
+    inner_cm:
+    - 60
+    - 50
+    - 40
+    occupied_by: R196
+    contents_cm:
+    - - 25
+      - 11
+      - 17
+- id: C2
+  name: Havendam Wilgenhof
+  street: Wilgenhof
+  compartments:
+  - id: C2-1
+    number: 1
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: C2-2
+    number: 2
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: C2-3
+    number: 3
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: R173
+    contents_cm:
+    - - 18
+      - 22
+      - 3
+  - id: C2-4
+    number: 4
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: C2-5
+    number: 5
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: R023
+    contents_cm:
+    - - 32
+      - 11
+      - 7
+  - id: C2-6
+    number: 6
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: C2-7
+    number: 7
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: C2-8
+    number: 8
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: R011
+    contents_cm:
+    - - 31
+      - 17
+      - 10
+  - id: C2-9
+    number: 9
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: R113
+    contents_cm:
+    - - 22
+      - 11
+      - 3
+  - id: C2-10
+    number: 10
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: R041
+    contents_cm:
+    - - 17
+      - 13
+      - 14
+  - id: C2-11
+    number: 11
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: C2-12
+    number: 12
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: R005
+    contents_cm:
+    - - 24
+      - 20
+      - 6
+  - id: C2-13
+    number: 13
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: C2-14
+    number: 14
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: C2-15
+    number: 15
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: C2-16
+    number: 16
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: C2-17
+    number: 17
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: C2-18
+    number: 18
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: C2-19
+    number: 19
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: C2-20
+    number: 20
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: C2-21
+    number: 21
+    size: L
+    inner_cm:
+    - 60
+    - 50
+    - 40
+    occupied_by: R035
+    contents_cm:
+    - - 32
+      - 15
+      - 17
+  - id: C2-22
+    number: 22
+    size: L
+    inner_cm:
+    - 60
+    - 50
+    - 40
+    occupied_by: null
+    contents_cm: []
+- id: D1
+  name: Havendam Meeuwenpad
+  street: Meeuwenpad
+  compartments:
+  - id: D1-1
+    number: 1
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: D1-2
+    number: 2
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: D1-3
+    number: 3
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: D1-4
+    number: 4
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: D1-5
+    number: 5
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: R162
+    contents_cm:
+    - - 19
+      - 11
+      - 3
+  - id: D1-6
+    number: 6
+    size: XS
+    inner_cm:
+    - 60
+    - 30
+    - 10
+    occupied_by: null
+    contents_cm: []
+  - id: D1-7
+    number: 7
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: D1-8
+    number: 8
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: R138
+    contents_cm:
+    - - 18
+      - 24
+      - 10
+  - id: D1-9
+    number: 9
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: D1-10
+    number: 10
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: D1-11
+    number: 11
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: R108
+    contents_cm:
+    - - 20
+      - 23
+      - 10
+  - id: D1-12
+    number: 12
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: D1-13
+    number: 13
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: D1-14
+    number: 14
+    size: S
+    inner_cm:
+    - 60
+    - 35
+    - 16
+    occupied_by: null
+    contents_cm: []
+  - id: D1-15
+    number: 15
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: D1-16
+    number: 16
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: D1-17
+    number: 17
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: D1-18
+    number: 18
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: D1-19
+    number: 19
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: D1-20
+    number: 20
+    size: M
+    inner_cm:
+    - 60
+    - 40
+    - 22
+    occupied_by: null
+    contents_cm: []
+  - id: D1-21
+    number: 21
+    size: L
+    inner_cm:
+    - 60
+    - 50
+    - 40
+    occupied_by: R168
+    contents_cm:
+    - - 20
+      - 18
+      - 3
+  - id: D1-22
+    number: 22
+    size: L
+    inner_cm:
+    - 60
+    - 50
+    - 40
+    occupied_by: null
+    contents_cm: []
+recipients:
+- id: R001
+  code: UEEPB
+  first: Floor
+  last: Wijnhoven
+  building: A1
+  preference: deliver tomorrow
+- id: R002
+  code: RDKFU
+  first: Amira
+  last: Lindeboom
+  building: A2
+  preference: null
+- id: R003
+  code: ZAYFC
+  first: Jesse
+  last: Wijnhoven
+  building: B1
+  preference: null
+- id: R004
+  code: ZJWAZ
+  first: Ruben
+  last: Achterberg
+  building: C1
+  preference: null
+- id: R005
+  code: MRLSH
+  first: Noor
+  last: Hoekstein
+  building: C2
+  preference: null
+- id: R006
+  code: WEXFY
+  first: Elif
+  last: Uiterwijk
+  building: D1
+  preference: null
+- id: R007
+  code: DCCNU
+  first: Floor
+  last: Wijnhoven
+  building: A1
+  preference: null
+- id: R008
+  code: PZYWH
+  first: Milan
+  last: Brakel
+  building: A2
+  preference: null
+- id: R009
+  code: TPACF
+  first: Anouk
+  last: Haverkamp
+  building: B1
+  preference: null
+- id: R010
+  code: GXVPZ
+  first: Stijn
+  last: Kampers
+  building: C1
+  preference: null
+- id: R011
+  code: MPTZD
+  first: Mira
+  last: Zandbergen
+  building: C2
+  preference: null
+- id: R012
+  code: ZYSAE
+  first: Jesse
+  last: Brakel
+  building: D1
+  preference: null
+- id: R013
+  code: VBZDG
+  first: Nina
+  last: Esvelt
+  building: A1
+  preference: leave beside the lockers
+- id: R014
+  code: XWYNV
+  first: Isa
+  last: Wijnhoven
+  building: A2
+  preference: null
+- id: R015
+  code: HRTAC
+  first: Fenna
+  last: Veldkamp
+  building: B1
+  preference: null
+- id: R016
+  code: FWMJR
+  first: Noor
+  last: Kampers
+  building: C1
+  preference: deliver tomorrow
+- id: R017
+  code: BDSAK
+  first: Noor
+  last: Doornbos
+  building: C2
+  preference: null
+- id: R018
+  code: HLSFN
+  first: Amira
+  last: Esvelt
+  building: D1
+  preference: null
+- id: R019
+  code: EUDTA
+  first: Jesse
+  last: Hoekstein
+  building: A1
+  preference: null
+- id: R020
+  code: DDNBJ
+  first: Isa
+  last: Wijnhoven
+  building: A2
+  preference: null
+- id: R021
+  code: THFNG
+  first: Milan
+  last: Lindeboom
+  building: B1
+  preference: null
+- id: R022
+  code: LPMZU
+  first: Hidde
+  last: Oosterbaan
+  building: C1
+  preference: null
+- id: R023
+  code: GVWVW
+  first: Elif
+  last: Brakel
+  building: C2
+  preference: null
+- id: R024
+  code: ZVEGZ
+  first: Lina
+  last: Oosterbaan
+  building: D1
+  preference: null
+- id: R025
+  code: KPPHE
+  first: Ruben
+  last: Esvelt
+  building: A1
+  preference: null
+- id: R026
+  code: UMWWU
+  first: Stijn
+  last: Dijkhuis
+  building: A2
+  preference: null
+- id: R027
+  code: YVBJR
+  first: Amira
+  last: Doornbos
+  building: B1
+  preference: null
+- id: R028
+  code: SCKYR
+  first: Fenna
+  last: Uiterwijk
+  building: C1
+  preference: null
+- id: R029
+  code: PURMB
+  first: Saar
+  last: Veldkamp
+  building: C2
+  preference: null
+- id: R030
+  code: DCUFT
+  first: Lina
+  last: Schuring
+  building: D1
+  preference: null
+- id: R031
+  code: WZPRC
+  first: Thijs
+  last: Plasman
+  building: A1
+  preference: null
+- id: R032
+  code: WUMDG
+  first: Jesse
+  last: Meerhof
+  building: A2
+  preference: null
+- id: R033
+  code: VVUCU
+  first: Roos
+  last: Meerhof
+  building: B1
+  preference: null
+- id: R034
+  code: XEJKX
+  first: Milan
+  last: Zandbergen
+  building: C1
+  preference: null
+- id: R035
+  code: ECTUD
+  first: Elif
+  last: Plasman
+  building: C2
+  preference: null
+- id: R036
+  code: YLNYY
+  first: Lotte
+  last: Dijkhuis
+  building: D1
+  preference: null
+- id: R037
+  code: YRRMJ
+  first: Sem
+  last: Grevelink
+  building: A1
+  preference: null
+- id: R038
+  code: PAHUK
+  first: Mira
+  last: Leeuwerik
+  building: A2
+  preference: null
+- id: R039
+  code: JTJJP
+  first: Sanne
+  last: Brakel
+  building: B1
+  preference: null
+- id: R040
+  code: PJNUT
+  first: Mira
+  last: Meerhof
+  building: C1
+  preference: null
+- id: R041
+  code: XLDDN
+  first: Hidde
+  last: Terpstra
+  building: C2
+  preference: null
+- id: R042
+  code: BHPMK
+  first: Fenna
+  last: Brakel
+  building: D1
+  preference: null
+- id: R043
+  code: DRDDY
+  first: Mira
+  last: Schuring
+  building: A1
+  preference: null
+- id: R044
+  code: RDJVW
+  first: Roos
+  last: Terpstra
+  building: A2
+  preference: null
+- id: R045
+  code: GKKYM
+  first: Ruben
+  last: Grevelink
+  building: B1
+  preference: null
+- id: R046
+  code: RGJYM
+  first: Amira
+  last: Plasman
+  building: C1
+  preference: null
+- id: R047
+  code: PYKPV
+  first: Hidde
+  last: Terpstra
+  building: C2
+  preference: null
+- id: R048
+  code: ESBRX
+  first: Nina
+  last: Lindeboom
+  building: D1
+  preference: null
+- id: R049
+  code: VZTFU
+  first: Sanne
+  last: Plasman
+  building: A1
+  preference: null
+- id: R050
+  code: DVSAE
+  first: Joris
+  last: Achterberg
+  building: A2
+  preference: deliver tomorrow
+- id: R051
+  code: HEJRB
+  first: Anouk
+  last: Doornbos
+  building: B1
+  preference: null
+- id: R052
+  code: XPBMG
+  first: Koen
+  last: Grevelink
+  building: C1
+  preference: null
+- id: R053
+  code: FZJLZ
+  first: Yara
+  last: Rietveld
+  building: C2
+  preference: null
+- id: R054
+  code: SHGMA
+  first: Sem
+  last: Esvelt
+  building: D1
+  preference: null
+- id: R055
+  code: VXCBX
+  first: Floor
+  last: Terpstra
+  building: A1
+  preference: null
+- id: R056
+  code: TPBKU
+  first: Sanne
+  last: Achterberg
+  building: A2
+  preference: null
+- id: R057
+  code: MLVGP
+  first: Teun
+  last: Doornbos
+  building: B1
+  preference: leave beside the lockers
+- id: R058
+  code: AXPDS
+  first: Hidde
+  last: Plasman
+  building: C1
+  preference: leave beside the lockers
+- id: R059
+  code: PZNSL
+  first: Koen
+  last: Meerhof
+  building: C2
+  preference: null
+- id: R060
+  code: EGBMC
+  first: Stijn
+  last: Esvelt
+  building: D1
+  preference: null
+- id: R061
+  code: ABKEP
+  first: Saar
+  last: Plasman
+  building: A1
+  preference: hold at hub
+- id: R062
+  code: PDRNA
+  first: Joris
+  last: Rietveld
+  building: A2
+  preference: null
+- id: R063
+  code: LCURG
+  first: Floor
+  last: Wijnhoven
+  building: B1
+  preference: null
+- id: R064
+  code: JRCBS
+  first: Sanne
+  last: Doornbos
+  building: C1
+  preference: null
+- id: R065
+  code: KRDRD
+  first: Mats
+  last: Bosgra
+  building: C2
+  preference: null
+- id: R066
+  code: RRBDY
+  first: Sanne
+  last: Hoekstein
+  building: D1
+  preference: null
+- id: R067
+  code: YHEEH
+  first: Lotte
+  last: Terpstra
+  building: A1
+  preference: null
+- id: R068
+  code: MJSKM
+  first: Hidde
+  last: Doornbos
+  building: A2
+  preference: hold at hub
+- id: R069
+  code: GRYNV
+  first: Joris
+  last: Dijkhuis
+  building: B1
+  preference: null
+- id: R070
+  code: LFBBE
+  first: Fenna
+  last: Wijnhoven
+  building: C1
+  preference: null
+- id: R071
+  code: APWSG
+  first: Thijs
+  last: Esvelt
+  building: C2
+  preference: null
+- id: R072
+  code: HPJHK
+  first: Saar
+  last: Meerhof
+  building: D1
+  preference: null
+- id: R073
+  code: CSVRD
+  first: Nina
+  last: Kampers
+  building: A1
+  preference: null
+- id: R074
+  code: LRFBZ
+  first: Roos
+  last: Esvelt
+  building: A2
+  preference: null
+- id: R075
+  code: EYHJN
+  first: Koen
+  last: Grevelink
+  building: B1
+  preference: null
+- id: R076
+  code: BMRNU
+  first: Fenna
+  last: Oosterbaan
+  building: C1
+  preference: null
+- id: R077
+  code: LDZLC
+  first: Lina
+  last: Grevelink
+  building: C2
+  preference: null
+- id: R078
+  code: TMBVF
+  first: Bas
+  last: Haverkamp
+  building: D1
+  preference: null
+- id: R079
+  code: XKMJU
+  first: Sanne
+  last: Uiterwijk
+  building: A1
+  preference: null
+- id: R080
+  code: TNNDB
+  first: Teun
+  last: Achterberg
+  building: A2
+  preference: null
+- id: R081
+  code: NXSEK
+  first: Nina
+  last: Haverkamp
+  building: B1
+  preference: null
+- id: R082
+  code: SHZRU
+  first: Isa
+  last: Brakel
+  building: C1
+  preference: null
+- id: R083
+  code: KULEB
+  first: Milan
+  last: Lindeboom
+  building: C2
+  preference: null
+- id: R084
+  code: DHPZT
+  first: Hidde
+  last: Veldkamp
+  building: D1
+  preference: null
+- id: R085
+  code: KVRBJ
+  first: Jesse
+  last: Haverkamp
+  building: A1
+  preference: null
+- id: R086
+  code: APJGD
+  first: Isa
+  last: Velthoven
+  building: A2
+  preference: null
+- id: R087
+  code: BKFGW
+  first: Isa
+  last: Veldkamp
+  building: B1
+  preference: null
+- id: R088
+  code: LZHVN
+  first: Koen
+  last: Hoekstein
+  building: C1
+  preference: null
+- id: R089
+  code: ZELLP
+  first: Isa
+  last: Wijnhoven
+  building: C2
+  preference: null
+- id: R090
+  code: LKWYM
+  first: Roos
+  last: Doornbos
+  building: D1
+  preference: null
+- id: R091
+  code: RPKSX
+  first: Yara
+  last: Rietveld
+  building: A1
+  preference: null
+- id: R092
+  code: GJAEW
+  first: Jesse
+  last: Meerhof
+  building: A2
+  preference: null
+- id: R093
+  code: WRTFW
+  first: Sem
+  last: Dijkhuis
+  building: B1
+  preference: null
+- id: R094
+  code: WGKAX
+  first: Noor
+  last: Velthoven
+  building: C1
+  preference: null
+- id: R095
+  code: LRDAN
+  first: Lina
+  last: Brakel
+  building: C2
+  preference: null
+- id: R096
+  code: CWCXL
+  first: Fenna
+  last: Uiterwijk
+  building: D1
+  preference: null
+- id: R097
+  code: TULSJ
+  first: Elif
+  last: Lindeboom
+  building: A1
+  preference: null
+- id: R098
+  code: JTKTN
+  first: Bram
+  last: Oosterbaan
+  building: A2
+  preference: deliver tomorrow
+- id: R099
+  code: LVKZD
+  first: Floor
+  last: Brakel
+  building: B1
+  preference: null
+- id: R100
+  code: YNVPG
+  first: Hidde
+  last: Doornbos
+  building: C1
+  preference: null
+- id: R101
+  code: WRYRU
+  first: Floor
+  last: Achterberg
+  building: C2
+  preference: leave beside the lockers
+- id: R102
+  code: RNKWY
+  first: Fenna
+  last: Doornbos
+  building: D1
+  preference: null
+- id: R103
+  code: LUMAT
+  first: Elif
+  last: Doornbos
+  building: A1
+  preference: null
+- id: R104
+  code: AFGUC
+  first: Sem
+  last: Hoekstein
+  building: A2
+  preference: null
+- id: R105
+  code: DWXDD
+  first: Ruben
+  last: Achterberg
+  building: B1
+  preference: null
+- id: R106
+  code: UYRGB
+  first: Joris
+  last: Haverkamp
+  building: C1
+  preference: null
+- id: R107
+  code: ZJWSG
+  first: Elif
+  last: Oosterbaan
+  building: C2
+  preference: null
+- id: R108
+  code: LLTJL
+  first: Lotte
+  last: Wijnhoven
+  building: D1
+  preference: null
+- id: R109
+  code: PNDNN
+  first: Koen
+  last: Bosgra
+  building: A1
+  preference: null
+- id: R110
+  code: XENLD
+  first: Lina
+  last: Velthoven
+  building: A2
+  preference: null
+- id: R111
+  code: UJZAD
+  first: Lina
+  last: Grevelink
+  building: B1
+  preference: null
+- id: R112
+  code: ZPBJM
+  first: Thijs
+  last: Esvelt
+  building: C1
+  preference: null
+- id: R113
+  code: DPELC
+  first: Milan
+  last: Uiterwijk
+  building: C2
+  preference: null
+- id: R114
+  code: EYMTX
+  first: Elif
+  last: Grevelink
+  building: D1
+  preference: null
+- id: R115
+  code: LMUKS
+  first: Roos
+  last: Veldkamp
+  building: A1
+  preference: null
+- id: R116
+  code: STTUU
+  first: Sanne
+  last: Haverkamp
+  building: A2
+  preference: null
+- id: R117
+  code: RGWPF
+  first: Thijs
+  last: Bosgra
+  building: B1
+  preference: null
+- id: R118
+  code: NWPGR
+  first: Koen
+  last: Veldkamp
+  building: C1
+  preference: null
+- id: R119
+  code: ZEMYC
+  first: Teun
+  last: Rietveld
+  building: C2
+  preference: hold at hub
+- id: R120
+  code: NCHYG
+  first: Bas
+  last: Bosgra
+  building: D1
+  preference: null
+- id: R121
+  code: BDPTU
+  first: Koen
+  last: Kampers
+  building: A1
+  preference: null
+- id: R122
+  code: CNNMV
+  first: Thijs
+  last: Uiterwijk
+  building: A2
+  preference: null
+- id: R123
+  code: UURMX
+  first: Fenna
+  last: Oosterbaan
+  building: B1
+  preference: null
+- id: R124
+  code: WNDEN
+  first: Luuk
+  last: Bosgra
+  building: C1
+  preference: leave beside the lockers
+- id: R125
+  code: NJBTJ
+  first: Noor
+  last: Zandbergen
+  building: C2
+  preference: null
+- id: R126
+  code: VGTFL
+  first: Jesse
+  last: Haverkamp
+  building: D1
+  preference: null
+- id: R127
+  code: FFDJY
+  first: Roos
+  last: Uiterwijk
+  building: A1
+  preference: null
+- id: R128
+  code: MEGBH
+  first: Yara
+  last: Lindeboom
+  building: A2
+  preference: null
+- id: R129
+  code: WAMDS
+  first: Anouk
+  last: Veldkamp
+  building: B1
+  preference: null
+- id: R130
+  code: XGVKJ
+  first: Daan
+  last: Schuring
+  building: C1
+  preference: null
+- id: R131
+  code: UWWPW
+  first: Lotte
+  last: Rietveld
+  building: C2
+  preference: null
+- id: R132
+  code: AZXZV
+  first: Mira
+  last: Doornbos
+  building: D1
+  preference: null
+- id: R133
+  code: RGJLL
+  first: Roos
+  last: Grevelink
+  building: A1
+  preference: null
+- id: R134
+  code: UCSCW
+  first: Bas
+  last: Dijkhuis
+  building: A2
+  preference: null
+- id: R135
+  code: UNGST
+  first: Milan
+  last: Oosterbaan
+  building: B1
+  preference: null
+- id: R136
+  code: DVRNG
+  first: Hidde
+  last: Meerhof
+  building: C1
+  preference: null
+- id: R137
+  code: AVHFW
+  first: Lina
+  last: Grevelink
+  building: C2
+  preference: null
+- id: R138
+  code: FKBCP
+  first: Isa
+  last: Velthoven
+  building: D1
+  preference: null
+- id: R139
+  code: PUGKY
+  first: Saar
+  last: Kampers
+  building: A1
+  preference: null
+- id: R140
+  code: MRVDA
+  first: Roos
+  last: Hoekstein
+  building: A2
+  preference: null
+- id: R141
+  code: WYHGY
+  first: Joris
+  last: Dijkhuis
+  building: B1
+  preference: null
+- id: R142
+  code: KEVDU
+  first: Jesse
+  last: Hoekstein
+  building: C1
+  preference: null
+- id: R143
+  code: KDASD
+  first: Floor
+  last: Hoekstein
+  building: C2
+  preference: null
+- id: R144
+  code: PWRBB
+  first: Teun
+  last: Doornbos
+  building: D1
+  preference: hold at hub
+- id: R145
+  code: BXKPU
+  first: Isa
+  last: Hoekstein
+  building: A1
+  preference: null
+- id: R146
+  code: GLWUV
+  first: Luuk
+  last: Bosgra
+  building: A2
+  preference: null
+- id: R147
+  code: XAHBX
+  first: Jesse
+  last: Grevelink
+  building: B1
+  preference: null
+- id: R148
+  code: BBXEL
+  first: Isa
+  last: Schuring
+  building: C1
+  preference: null
+- id: R149
+  code: ARVPK
+  first: Nina
+  last: Meerhof
+  building: C2
+  preference: null
+- id: R150
+  code: EJZFL
+  first: Sanne
+  last: Kooistra
+  building: D1
+  preference: null
+- id: R151
+  code: PLJNF
+  first: Floor
+  last: Brakel
+  building: A1
+  preference: null
+- id: R152
+  code: XUDTU
+  first: Jesse
+  last: Veldkamp
+  building: A2
+  preference: null
+- id: R153
+  code: YBLDF
+  first: Jesse
+  last: Brakel
+  building: B1
+  preference: null
+- id: R154
+  code: JEYAH
+  first: Sem
+  last: Terpstra
+  building: C1
+  preference: null
+- id: R155
+  code: GXHCE
+  first: Ruben
+  last: Oosterbaan
+  building: C2
+  preference: null
+- id: R156
+  code: CCFLU
+  first: Stijn
+  last: Hoekstein
+  building: D1
+  preference: null
+- id: R157
+  code: RLNWE
+  first: Ruben
+  last: Esvelt
+  building: A1
+  preference: null
+- id: R158
+  code: EVZDF
+  first: Yara
+  last: Oosterbaan
+  building: A2
+  preference: null
+- id: R159
+  code: NANEK
+  first: Lotte
+  last: Plasman
+  building: B1
+  preference: null
+- id: R160
+  code: RYHCC
+  first: Koen
+  last: Hoekstein
+  building: C1
+  preference: null
+- id: R161
+  code: FVDVG
+  first: Lina
+  last: Schuring
+  building: C2
+  preference: null
+- id: R162
+  code: ZLCWW
+  first: Jesse
+  last: Veldkamp
+  building: D1
+  preference: null
+- id: R163
+  code: MHKKN
+  first: Amira
+  last: Achterberg
+  building: A1
+  preference: null
+- id: R164
+  code: RDHSB
+  first: Noor
+  last: Veldkamp
+  building: A2
+  preference: null
+- id: R165
+  code: JJSPE
+  first: Yara
+  last: Bosgra
+  building: B1
+  preference: null
+- id: R166
+  code: MSDDX
+  first: Noor
+  last: Achterberg
+  building: C1
+  preference: null
+- id: R167
+  code: CMJLU
+  first: Daan
+  last: Rietveld
+  building: C2
+  preference: null
+- id: R168
+  code: VULCU
+  first: Hidde
+  last: Achterberg
+  building: D1
+  preference: null
+- id: R169
+  code: BUZNE
+  first: Luuk
+  last: Schuring
+  building: A1
+  preference: null
+- id: R170
+  code: YCAZS
+  first: Saar
+  last: Leeuwerik
+  building: A2
+  preference: null
+- id: R171
+  code: PHWPM
+  first: Jesse
+  last: Achterberg
+  building: B1
+  preference: null
+- id: R172
+  code: MKKHF
+  first: Stijn
+  last: Velthoven
+  building: C1
+  preference: null
+- id: R173
+  code: MTGLA
+  first: Fenna
+  last: Meerhof
+  building: C2
+  preference: null
+- id: R174
+  code: HBZML
+  first: Daan
+  last: Meerhof
+  building: D1
+  preference: null
+- id: R175
+  code: NSSJJ
+  first: Fenna
+  last: Grevelink
+  building: A1
+  preference: null
+- id: R176
+  code: FAZBM
+  first: Noor
+  last: Bosgra
+  building: A2
+  preference: null
+- id: R177
+  code: DLUFM
+  first: Ruben
+  last: Oosterbaan
+  building: B1
+  preference: null
+- id: R178
+  code: JMJDK
+  first: Floor
+  last: Rietveld
+  building: C1
+  preference: null
+- id: R179
+  code: CMWXJ
+  first: Noor
+  last: Kampers
+  building: C2
+  preference: null
+- id: R180
+  code: WGDFW
+  first: Bram
+  last: Dijkhuis
+  building: D1
+  preference: null
+- id: R181
+  code: RXDHH
+  first: Stijn
+  last: Zandbergen
+  building: A1
+  preference: null
+- id: R182
+  code: RPWRW
+  first: Daan
+  last: Meerhof
+  building: A2
+  preference: null
+- id: R183
+  code: UXLHG
+  first: Stijn
+  last: Esvelt
+  building: B1
+  preference: null
+- id: R184
+  code: GLEWW
+  first: Jesse
+  last: Rietveld
+  building: C1
+  preference: null
+- id: R185
+  code: VBTCJ
+  first: Luuk
+  last: Kampers
+  building: C2
+  preference: null
+- id: R186
+  code: JLFJX
+  first: Luuk
+  last: Zandbergen
+  building: D1
+  preference: null
+- id: R187
+  code: PFUCP
+  first: Elif
+  last: Uiterwijk
+  building: A1
+  preference: null
+- id: R188
+  code: MRUYC
+  first: Elif
+  last: Dijkhuis
+  building: A2
+  preference: null
+- id: R189
+  code: BJSSK
+  first: Ruben
+  last: Terpstra
+  building: B1
+  preference: null
+- id: R190
+  code: LESMU
+  first: Anouk
+  last: Brakel
+  building: C1
+  preference: null
+- id: R191
+  code: AZYZG
+  first: Sem
+  last: Lindeboom
+  building: C2
+  preference: null
+- id: R192
+  code: RWBJZ
+  first: Sanne
+  last: Lindeboom
+  building: D1
+  preference: null
+- id: R193
+  code: FYHNN
+  first: Daan
+  last: Velthoven
+  building: A1
+  preference: null
+- id: R194
+  code: MTTZM
+  first: Mira
+  last: Doornbos
+  building: A2
+  preference: null
+- id: R195
+  code: NNVDW
+  first: Elif
+  last: Oosterbaan
+  building: B1
+  preference: null
+- id: R196
+  code: DSHGN
+  first: Thijs
+  last: Kampers
+  building: C1
+  preference: null
+- id: R197
+  code: WUPGK
+  first: Luuk
+  last: Uiterwijk
+  building: C2
+  preference: null
+- id: R198
+  code: DRVWB
+  first: Lotte
+  last: Haverkamp
+  building: D1
+  preference: null
+- id: R199
+  code: TLLYF
+  first: Stijn
+  last: Achterberg
+  building: A1
+  preference: null
+- id: R200
+  code: MVNTF
+  first: Mira
+  last: Esvelt
+  building: A2
+  preference: null
